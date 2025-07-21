@@ -5,12 +5,10 @@ import "fmt"
 func main() {
 	var number int = 0
 
-	if number > 0 {
-		fmt.Println("Число положительное")
-	} else if number < 0 {
-		fmt.Println("Число отрицательное")
+	if number%2 == 0 {
+		fmt.Println("Число четное")
 	} else {
-		fmt.Println("Число равно нулю")
+		fmt.Println("Число нечетное")
 	}
 
 	day := "Monday"
