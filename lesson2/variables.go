@@ -1,5 +1,4 @@
-package main
-
+package variables
 import "fmt"
 
 var name string = "Dimas"
