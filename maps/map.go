@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"golang/maps/mapuse"
-	"golang/maps/mymap"
+	// "golang/maps/mapuse"
+	// "golang/maps/mymap"
 )
 
 type User struct {
@@ -32,20 +32,20 @@ func main() {
 	// }
 
 	// fmt.Println(UpdateEmail(users, 1, "alice@newmail.com"))
-	settings := map[string]map[string]string{
-		"alice": {
-			"theme": "dark",
-			"lang":  "en",
-		},
-	}
+	// settings := map[string]map[string]string{
+	// 	"alice": {
+	// 		"theme": "dark",
+	// 		"lang":  "en",
+	// 	},
+	// }
 
 	// mymap.SetUserSet(settings, "alice", "lang", "ru")
-	mymap.SetUserSet(settings, "bob", "theme", "light")
-	users := map[string]string{
-		"Alice": "Go",
-		"Bob":   "Python",
-		"Tom":   "Go",
-		"Kate":  "Java",
-	}
-	mapuse.CountLanguages(users)
+	// mymap.SetUserSet(settings, "bob", "theme", "light")
+	// users := map[string]string{
+	// 	"Alice": "Go",
+	// 	"Bob":   "Python",
+	// 	"Tom":   "Go",
+	// 	"Kate":  "Java",
+	// }
+	// mapuse.CountLanguages(users)
 }
