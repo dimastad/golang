@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"golang/maps/mapuse"
 	"golang/maps/mymap"
 )
 
@@ -40,4 +41,11 @@ func main() {
 
 	// mymap.SetUserSet(settings, "alice", "lang", "ru")
 	mymap.SetUserSet(settings, "bob", "theme", "light")
+	users := map[string]string{
+		"Alice": "Go",
+		"Bob":   "Python",
+		"Tom":   "Go",
+		"Kate":  "Java",
+	}
+	mapuse.CountLanguages(users)
 }
